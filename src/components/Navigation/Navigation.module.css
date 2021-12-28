@@ -1,0 +1,27 @@
+nav {
+  background-color: rgb(50, 50, 50);
+  color: rgb(214, 214, 214);
+  max-width: 100%;
+}
+ul {
+  display: flex;
+  max-width: 900px;
+  min-width: 800px;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0.6rem 0.6rem;
+  align-items: center;
+}
+li {
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+li:hover {
+  color: rgb(255, 255, 255);
+}
+.apple {
+  font-size: 20px;
+}
