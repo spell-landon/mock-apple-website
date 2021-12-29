@@ -3,7 +3,7 @@ import styles from './Navigation.module.css';
 
 function Navigation(props) {
   return (
-    <nav>
+    <nav className={styles.navigation}>
       <ul>
         <li className={styles.apple}>
           <i class='fab fa-apple'></i>

@@ -1,0 +1,83 @@
+/*TODO MODEL 1 */
+.model_1 {
+  height: 650px;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: rgba(237, 238, 252, 100%);
+  margin-bottom: 1rem;
+}
+.appleLogo {
+  color: rgba(217, 56, 48, 100%);
+  font-size: 100px;
+}
+.ulEl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1100px;
+}
+.title {
+  font-size: 48px;
+  font-weight: 600;
+}
+.link {
+  color: rgba(41, 100, 196, 100%);
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.productImages {
+  max-width: 800px;
+  height: 350px;
+}
+.productImages > li {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item1 {
+  background-color: rgba(237, 110, 128, 100%);
+}
+.item2 {
+  background-color: rgba(18, 52, 185, 100%);
+  color: white;
+}
+.item3 {
+  background-color: rgba(222, 234, 217, 100%);
+}
+
+/*TODO MODEL 2 */
+.model_2 {
+  background-color: rgba(227, 240, 250, 100%);
+  background-image: url(../../assets/iphone13.jpeg);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  height: 650px;
+  width: 100%;
+  padding: 3rem 0;
+  margin-bottom: 1rem;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+}
+.subtitle {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: -0.5rem;
+}
+
+/*TODO MODEL 3 */
