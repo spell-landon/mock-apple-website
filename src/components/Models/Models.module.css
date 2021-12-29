@@ -145,6 +145,7 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  flex-grow: 2;
 }
 
 /*TODO TILE 1 */
@@ -435,6 +436,7 @@
   font-size: 12px;
   padding: 0.5rem 0;
   justify-content: space-between;
+  padding-bottom: 1.5rem;
 }
 .footer > ul {
   display: flex;
