@@ -14,7 +14,9 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  max-width: 1100px;
+  max-width: fit-content;
+  list-style-type: none;
+  margin: 0 auto;
 }
 .title {
   font-size: 48px;
@@ -32,8 +34,12 @@
   text-decoration: underline;
 }
 .productImages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 800px;
   height: 350px;
+  margin: 0 auto;
 }
 .productImages > li {
   height: 100px;
@@ -44,22 +50,27 @@
   justify-content: center;
   align-items: center;
 }
-.item1 {
-  background-color: rgba(237, 110, 128, 100%);
+.item1 img {
+  width: 200px;
+  box-shadow: 0 0 30px 25px white;
+  border-radius: 25px;
 }
-.item2 {
-  background-color: rgba(18, 52, 185, 100%);
-  color: white;
+.item2 img {
+  width: 350px;
+  box-shadow: 0 0 20px 20px rgba(250, 250, 250, 100%);
+  border-radius: 25px;
 }
-.item3 {
-  background-color: rgba(222, 234, 217, 100%);
+.item3 img {
+  width: 250px;
+  box-shadow: 0 0 30px 25px white;
+  border-radius: 25px;
 }
 
 /*TODO MODEL 2 */
 .model_2 {
   background-color: rgba(227, 240, 250, 100%);
-  background-image: url(../../assets/iphone13.jpeg);
-  background-size: 800px;
+  background-image: url(../../assets/iphone13pro.jpeg);
+  background-size: 700px;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: bottom;
@@ -81,3 +92,365 @@
 }
 
 /*TODO MODEL 3 */
+.model_3 {
+  background-color: rgba(255, 255, 255, 100%);
+  background-image: url(../../assets/apple_card.jpg);
+  background-size: 450px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  height: 650px;
+  width: 100%;
+  padding: 3rem 0;
+  margin-bottom: 1rem;
+}
+.model_3_title {
+  max-width: fit-content;
+  margin: 0 auto;
+  font-size: 48px;
+  font-weight: 600;
+  background: linear-gradient(
+    90deg,
+    rgba(223, 112, 79, 100%),
+    rgba(213, 90, 113, 100%),
+    rgba(108, 130, 187, 100%)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.model_3_subtitle {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: -0.5rem;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.3;
+}
+.model_3_terms {
+  color: rgba(109, 109, 114, 100%);
+  font-weight: 300;
+  margin: 1rem auto;
+}
+.model_3_links {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 0 auto;
+}
+/*? TILES  */
+.tiles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+/*TODO TILE 1 */
+.tile_1 {
+  background-color: rgba(50, 40, 58, 100%);
+  background-image: url(../../assets/iphone13.png);
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 20rem;
+  height: 600px;
+  max-width: 650px;
+  width: 700px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tile_1_title {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+}
+.tile_1_subtitle {
+  color: rgba(245, 195, 232, 100%);
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+}
+.tile_1_links {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+/*TODO TILE 2 */
+.tile_2 {
+  background-color: rgba(50, 40, 58, 100%);
+  background-image: url(../../assets/single-computer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  height: 600px;
+  max-width: 650px;
+  width: 700px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tile_2_title {
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  margin-top: 1.5rem;
+}
+.tile_2_subtitle {
+  color: rgb(202, 94, 90);
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+}
+.tile_2_links {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+/*TODO TILE 3 */
+.tile_3 {
+  background-color: rgba(244, 244, 246, 100%);
+  background-image: url(../../assets/apple-watch.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 12rem;
+  height: 600px;
+  max-width: 650px;
+  width: 700px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tile_3_p {
+  padding-top: 2rem;
+  font-size: 12px;
+  color: rgba(176, 80, 31, 100%);
+}
+.tile_3_title {
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  margin-top: 0rem;
+}
+.tile_3_subtitle {
+  color: rgb(202, 94, 90);
+  font-weight: 500;
+  font-size: 20px;
+}
+.tile_3_description {
+  font-weight: 500;
+  margin: 0.5rem auto;
+}
+.tile_3_links {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+/*TODO TILE 4 */
+.tile_4 {
+  background-color: rgba(255, 255, 255, 100%);
+  background-image: url(../../assets/homepod.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 5rem;
+  height: 600px;
+  max-width: 650px;
+  width: 700px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tile_4_title {
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  margin-top: 0rem;
+  padding-top: 3rem;
+}
+.tile_4_links {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+/*TODO TILE 5 */
+.tile_5 {
+  background-color: rgba(234, 234, 236, 100%);
+  background-image: url(../../assets/airpods.jpeg);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -5rem;
+  height: 600px;
+  max-width: 650px;
+  width: 700px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tile_5_title {
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  margin-top: 22.5rem;
+  padding-top: 3rem;
+}
+.tile_5_description {
+  font-weight: 500;
+  margin: 0.5rem auto;
+}
+.tile_5_links {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+/*TODO TILE 6 */
+.tile_6 {
+  background-color: rgba(202, 178, 121, 100%);
+  background-image: url(../../assets/hellojack.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 5rem;
+  height: 600px;
+  max-width: 650px;
+  width: 700px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.tile_6_title {
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  margin-top: 0rem;
+  /* padding-top: 3rem; */
+}
+.tile_6_links {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+}
+.tile_6_link {
+  cursor: pointer;
+  font-weight: 500;
+}
+.tile_6_link:hover {
+  text-decoration: underline;
+}
+
+/*TODO Disclaimer */
+.disclaimer {
+  width: 100%;
+  background-color: rgba(244, 244, 246, 100%);
+}
+.text {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  font-size: 12px;
+  text-align: left;
+  color: rgba(109, 109, 114, 100%);
+  border-bottom: 1px solid rgba(209, 209, 214, 100%);
+}
+.lightgray {
+  font-weight: 600;
+}
+.textLink {
+  cursor: pointer;
+  color: rgba(65, 65, 68, 100%);
+  font-weight: 500;
+}
+.textLink:hover {
+  text-decoration: underline;
+}
+
+.para {
+  padding: 0.3rem 0;
+}
+.lists {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1100px;
+  height: 500px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.lists > ul {
+  list-style-type: none;
+  margin: 1rem;
+  text-align: left;
+  font-size: 12px;
+}
+.lists > ul > li {
+  font-weight: 300;
+  cursor: pointer;
+  padding: 0.3rem 0;
+}
+.lists > ul > li:hover {
+  text-decoration: underline;
+}
+.moreWays {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: rgba(109, 109, 114, 100%);
+  border-bottom: 1px solid rgba(209, 209, 214, 100%);
+  font-size: 12px;
+  text-align: left;
+  padding: 0.5rem 0;
+}
+.moreWays_link {
+  color: rgba(41, 100, 196, 100%);
+  cursor: pointer;
+}
+.moreWays_link:hover {
+  text-decoration: underline;
+}
+.footer {
+  display: flex;
+  background-color: rgba(244, 244, 246, 100%);
+  max-width: 1100px;
+  margin: 0 auto;
+  color: rgba(109, 109, 114, 100%);
+  font-size: 12px;
+  padding: 0.5rem 0;
+  justify-content: space-between;
+}
+.footer > ul {
+  display: flex;
+  list-style-type: none;
+}
+.footer > ul > li {
+  padding: 0 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+.footer > ul > li:hover {
+  text-decoration: underline;
+}
+.copy {
+  justify-content: flex-start;
+}
+.united {
+  align-items: right;
+}

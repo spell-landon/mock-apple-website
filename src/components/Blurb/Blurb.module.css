@@ -1,10 +1,10 @@
-p {
+.blurb_p {
   padding: 3.8rem 0 0.8rem 0;
   font-size: 14px;
 }
-span {
+.spanLink {
   color: rgba(41, 100, 196, 100%);
 }
-span:hover {
+.spanLink:hover {
   text-decoration: underline;
 }
