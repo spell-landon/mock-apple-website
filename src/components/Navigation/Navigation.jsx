@@ -27,13 +27,41 @@ function Navigation(props) {
             iPad
           </Link>
         </li>
-        <li className={styles.navLink}>iPhone</li>
-        <li className={styles.navLink}>Watch</li>
-        <li className={styles.navLink}>AirPods</li>
-        <li className={styles.navLink}>TV & Home</li>
-        <li className={styles.navLink}>Only on Apple</li>
-        <li className={styles.navLink}>Accessories</li>
-        <li className={styles.navLink}>Support</li>
+        <li className={styles.navLink}>
+          <Link to='/iphone' className={styles.Link}>
+            iPhone
+          </Link>
+        </li>
+        <li className={styles.navLink}>
+          <Link to='/watch' className={styles.Link}>
+            Watch
+          </Link>
+        </li>
+        <li className={styles.navLink}>
+          <Link to='/airpods' className={styles.Link}>
+            AirPods
+          </Link>
+        </li>
+        <li className={styles.navLink}>
+          <Link to='/tv-home' className={styles.Link}>
+            TV & Home
+          </Link>
+        </li>
+        <li className={styles.navLink}>
+          <Link to='/services' className={styles.Link}>
+            Only on Apple
+          </Link>
+        </li>
+        <li className={styles.navLink}>
+          <Link to='/accessories' className={styles.Link}>
+            Accessories
+          </Link>
+        </li>
+        <li className={styles.navLink}>
+          <Link to='/support' className={styles.Link}>
+            Support
+          </Link>
+        </li>
         <li className={styles.navLink}>
           <i className='fas fa-search'></i>
         </li>

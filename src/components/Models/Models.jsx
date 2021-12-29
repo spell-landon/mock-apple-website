@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Models.module.css';
 import ipads from '../../assets/ipads.jpeg';
 import macbooks from '../../assets/macbooks.jpeg';
@@ -16,7 +17,11 @@ function Models(props) {
         </ul>
 
         <h1 className={styles.title}>Actually, there is a "you" in gift.</h1>
-        <h2 className={styles.link}>Shop {'>'}</h2>
+        <h2 className={styles.link}>
+          <Link to='/store' className={styles.Link}>
+            Shop {'>'}
+          </Link>
+        </h2>
         <ul className={styles.productImages}>
           <li className={styles.item1}>
             <img src={ipads} alt='iPads' />
@@ -34,8 +39,16 @@ function Models(props) {
         <h1 className={styles.title}>iPhone 13 Pro</h1>
         <h2 className={styles.subtitle}>Oh. So. Pro.</h2>
         <div className={styles.links}>
-          <p className={styles.link}>Learn more {'>'}</p>
-          <p className={styles.link}>Buy {'>'}</p>
+          <p className={styles.link}>
+            <Link to='/iphone' className={styles.Link}>
+              Learn more {'>'}
+            </Link>
+          </p>
+          <p className={styles.link}>
+            <Link to='/store' className={styles.Link}>
+              Buy {'>'}
+            </Link>
+          </p>
         </div>
       </section>
       {/* Model 3 */}
@@ -52,8 +65,16 @@ function Models(props) {
           Only at Apple. Exclusions and terms apply.<sup>1</sup>
         </h3>
         <div className={styles.model_3_links}>
-          <p className={styles.link}>Learn more {'>'}</p>
-          <p className={styles.link}>Apply Now {'>'}</p>
+          <p className={styles.link}>
+            <Link to='/services' className={styles.Link}>
+              Learn more {'>'}
+            </Link>
+          </p>
+          <p className={styles.link}>
+            <Link to='/support' className={styles.Link}>
+              Apply Now {'>'}
+            </Link>
+          </p>
         </div>
       </section>
       <section className={styles.tiles}>
@@ -62,8 +83,16 @@ function Models(props) {
           <h1 className={styles.tile_1_title}>iPhone 13</h1>
           <h2 className={styles.tile_1_subtitle}>Your new superpower.</h2>
           <div className={styles.tile_1_links}>
-            <p className={styles.link}>Learn more {'>'}</p>
-            <p className={styles.link}>Buy {'>'}</p>
+            <p className={styles.link}>
+              <Link to='/iphone' className={styles.Link}>
+                Learn more {'>'}
+              </Link>
+            </p>
+            <p className={styles.link}>
+              <Link to='/store' className={styles.Link}>
+                Buy {'>'}
+              </Link>
+            </p>
           </div>
         </section>
         {/* Tile 2 */}
@@ -71,8 +100,16 @@ function Models(props) {
           <h1 className={styles.tile_2_title}>MacBook Pro</h1>
           <h2 className={styles.tile_2_subtitle}>Supercharged for pros.</h2>
           <div className={styles.tile_2_links}>
-            <p className={styles.link}>Learn more {'>'}</p>
-            <p className={styles.link}>Buy {'>'}</p>
+            <p className={styles.link}>
+              <Link to='/mac' className={styles.Link}>
+                Learn more {'>'}
+              </Link>
+            </p>
+            <p className={styles.link}>
+              <Link to='/store' className={styles.Link}>
+                Buy {'>'}
+              </Link>
+            </p>
           </div>
         </section>
         {/* Tile 3 */}
@@ -88,16 +125,32 @@ function Models(props) {
             Introducing our largest display yet.
           </h3>
           <div className={styles.tile_3_links}>
-            <p className={styles.link}>Learn more {'>'}</p>
-            <p className={styles.link}>Buy {'>'}</p>
+            <p className={styles.link}>
+              <Link to='/watch' className={styles.Link}>
+                Learn more {'>'}
+              </Link>
+            </p>
+            <p className={styles.link}>
+              <Link to='/store' className={styles.Link}>
+                Buy {'>'}
+              </Link>
+            </p>
           </div>
         </section>
         {/* Tile 4 */}
         <section className={styles.tile_4}>
           <h1 className={styles.tile_4_title}>HomePod mini</h1>
           <div className={styles.tile_4_links}>
-            <p className={styles.link}>Learn more {'>'}</p>
-            <p className={styles.link}>Buy {'>'}</p>
+            <p className={styles.link}>
+              <Link to='/airpods' className={styles.Link}>
+                Learn more {'>'}
+              </Link>
+            </p>
+            <p className={styles.link}>
+              <Link to='/store' className={styles.Link}>
+                Buy {'>'}
+              </Link>
+            </p>
           </div>
         </section>
         {/* Tile 5 */}
@@ -107,8 +160,16 @@ function Models(props) {
             All-new with Spatial Audio
           </h3>
           <div className={styles.tile_5_links}>
-            <p className={styles.link}>Learn more {'>'}</p>
-            <p className={styles.link}>Buy {'>'}</p>
+            <p className={styles.link}>
+              <Link to='/airpods' className={styles.Link}>
+                Learn more {'>'}
+              </Link>
+            </p>
+            <p className={styles.link}>
+              <Link to='/store' className={styles.Link}>
+                Buy {'>'}
+              </Link>
+            </p>
           </div>
         </section>
         {/* Tile 6 */}
@@ -120,7 +181,9 @@ function Models(props) {
           </h1>
           <div className={styles.tile_6_links}>
             <p className={styles.tile_6_link}>
-              Stream now <i class='fas fa-play-circle'></i>
+              <Link to='/tv-home' className={styles.Link_tv}>
+                Stream now <i class='fas fa-play-circle'></i>
+              </Link>
             </p>
           </div>
         </section>
